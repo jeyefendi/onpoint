@@ -4,6 +4,15 @@
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "GilroyBold";
+  src: url("./fonts/Gilroy/GilroyExtraBold.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +20,15 @@
   list-style: none;
 }
 
+
 ::-webkit-scrollbar {
   width: 0;
 }
 
+header {
+  position: absolute;
+  z-index: +1;
+}
 
 header img {
   display: block;
@@ -36,7 +50,7 @@ main {
   display: flex;
   scroll-snap-type: x mandatory;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   overflow-x: scroll;
 }
 
@@ -53,14 +67,81 @@ section {
   scroll-snap-align: start;
 }
 
-p {
-  font-family: Gilroy;
-  font-size: 6em;
-}
 
 #home {
   background-image: url(./src/bg.png);
+  font-family: Gilroy;
+  position: relative;
 }
+
+.pink_sperm {
+  position: absolute;
+  width: 57vw;
+  margin-left: 22em;
+}
+
+.headline {
+  margin: 11em auto auto 4em;
+  z-index: +1;
+}
+
+p {
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 7em;
+  font-weight: normal;
+}
+
+.button {
+  position: absolute;
+  width: 30vw;
+  right: 8em;
+  bottom: 11.25em;
+}
+
+.bacterium_post {
+  position: absolute;
+  width: 8vw;
+  right: 12em;
+  top: 4em;
+  z-index: 0;
+}
+
+.bacterium_sup {
+  position: absolute;
+  top: 9em;
+  right: 6em;
+  width: 11vw;  
+  z-index: +1;
+}
+
+.bacterium_inf {
+  position: absolute;
+  width: 7vw;
+  left: 2em;  
+  bottom: 8em;
+}
+
+.bacterium_ant {
+  position: absolute;
+  width: 23vw;
+  right: 14em;
+  bottom: 0;
+}
+
+span {
+  font-family: GilroyBold;
+}
+
+
+
+
+
+
+
+
 
 #text_message {
   background-image: url(./src/bg_2.png);
