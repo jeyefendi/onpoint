@@ -12,14 +12,12 @@
   font-weight: normal;
 }
 
-
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
 }
-
 
 ::-webkit-scrollbar {
   width: 0;
@@ -45,7 +43,6 @@ footer img {
   left: 6em;
 }
 
-
 main {
   display: flex;
   scroll-snap-type: x mandatory;
@@ -60,6 +57,8 @@ section {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  font-family: Gilroy;
+  position: relative;
   margin: 0;
   width: 100vw;
   height: 100vh;
@@ -67,11 +66,8 @@ section {
   scroll-snap-align: start;
 }
 
-
 #home {
   background-image: url(./src/bg.png);
-  font-family: Gilroy;
-  position: relative;
 }
 
 .pink_sperm {
@@ -113,14 +109,14 @@ h1 {
   position: absolute;
   top: 9em;
   right: 6em;
-  width: 11vw;  
+  width: 11vw;
   z-index: +1;
 }
 
 .bacterium_inf {
   position: absolute;
   width: 7vw;
-  left: 2em;  
+  left: 2em;
   bottom: 8em;
 }
 
@@ -135,18 +131,247 @@ span {
   font-family: GilroyBold;
 }
 
-
-
-
-
-
-
-
-
 #text_message {
   background-image: url(./src/bg_2.png);
 }
 
+#text_message h1 {
+  position: absolute;
+  top: 4em;
+  left: 2em;
+  font-size: 2em;
+  max-width: 4em;
+}
+
+:root {
+  --scroll-width: calc(100vw - 100%);
+}
+
+.lorem {
+  position: absolute;
+  direction: rtl;
+  text-align: left;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 70vw;
+  height: 50vh;
+  font-size: 0.7em;
+  margin: 22em auto auto 12em;
+  padding: 2em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 2em 2em;
+  z-index: +1;
+}
+
+.lorem::-webkit-scrollbar {
+  width: 1em;
+  direction: rtl;
+}
+
+.lorem::-webkit-scrollbar-thumb {
+  width: 1em;
+  max-height: 1px;
+  background: linear-gradient(to bottom right, #8e406a, #cf578d);
+  border-radius: 3px;
+  -webkit-border-radius: 3em;
+}
+
+.lorem::-webkit-scrollbar-track {
+  width: 1em;
+  background-color: #000;
+  border-left: 9px solid rgb(255, 255, 255);
+  border-right: 9px solid rgb(255, 255, 255);
+  border-radius: 1em;
+}
+
+.lorem::-webkit-scrollbar-track-piece {
+  width: 1em;
+  background-color: #000;
+  border-left: 9px solid rgb(255, 255, 255);
+  border-right: 9px solid rgb(255, 255, 255);
+  border-radius: 1em;
+}
+
+.pink_sperm2 {
+  position: absolute;
+  top: 7em;
+  right: 0;
+  width: 64vw;
+}
+
+.pink_sperm3 {
+  position: absolute;
+  top: 6em;
+  right: 0;
+  width: 43vw;
+}
+
+.pink_sperm4 {
+  position: absolute;
+  top: 5em;
+  right: 0;
+  width: 30vw;
+}
+
 #key_message {
   background-image: url(./src/bg_3.png);
+}
+
+.bottle {
+  position: absolute;
+  bottom: 0;
+  left: 5em;
+  height: 90vh;
+  z-index: +1;
+}
+
+.bubble_1 {
+  position: absolute;
+  bottom: 0;
+  left: 14em;
+  width: 14vw;
+  z-index: +1;
+}
+
+.bubble_2 {
+  position: absolute;
+  bottom: 8em;
+  left: 17em;
+  width: 6vw;
+  z-index: +1;
+}
+
+
+.bubble_3 {
+  position: absolute;
+  bottom: 10em;
+  left: 3.5em;
+  width: 7vw;
+  z-index: +1;
+}
+
+.bubble_4 {
+  position: absolute;
+  bottom: 18em;
+  left: 2.5em;
+  width: 3.5vw;
+  z-index: +1;
+}
+
+.bubble_5 {
+  position: absolute;
+  width: 11vw;
+  top: 20em;
+  left: 14em;
+  z-index: +1;
+}
+
+.bubble_6 {
+  position: absolute;
+  width: 3.3vw;
+  top: 13em;
+  left: 7em;
+  z-index: +1;
+}
+
+.bubble_7 {
+  position: absolute;
+  width: 6.5vw;
+  top: 10em;
+  left: 13.5em;
+  z-index: +2;
+}
+
+.bubble_8 {
+  position: absolute;
+  width: 3.6vw;
+  top: 4em;
+  left: 14em;
+  z-index: +1;
+}
+
+.key {
+  position: absolute;
+  margin: 12em auto auto 24em;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.key p {
+  margin-left: 0.3em;
+}
+
+.key h1 {
+  
+  letter-spacing: 0.1em;
+}
+
+.food_img {
+  position: absolute;
+  width: 6.6vw;
+  top: 22em;
+  left: 23em;
+  z-index: +1;
+}
+
+.food {
+  display: block;
+  position: absolute;
+  padding: 3em 2em 4em 9em;
+  left: 18em;
+  bottom: 11em;
+  width: 28vw;
+  height: 20vh;
+  font-size: 0.8em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 3em 3em;
+  z-index: 0;
+}
+
+.food p {
+  position: flex;
+  justify-content: center;
+  margin: auto auto;
+  font-weight: 700;
+  max-width: 10em;
+}
+
+.calendar_img {
+  position: absolute;
+  width: 6.8vw;
+  top: 22.5em;
+  left: 46em;
+  z-index: +1;
+}
+
+.calendar {
+  display: block;
+  position: absolute;
+  padding: 3em 3em 0.5em 0.5em;
+  left: 54em;
+  bottom: 18.5em;
+  width: 21vw;
+  height: 13vh;
+  font-size: 0.8em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 3em 3em;
+  z-index: 0;
+}
+
+.calendar p {
+  position: flex;
+  justify-content: center;
+  margin: auto auto;
+  font-weight: 700;
+  max-width: 6em;
+}
+
+.button_2 {
+  position: absolute;
+  width: 25.7vw;
+  right: 4em;
+  bottom: 9em;
 }
