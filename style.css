@@ -15,24 +15,33 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
   text-decoration: none;
   list-style: none;
 }
+
+
 
 ::-webkit-scrollbar {
   width: 0;
 }
 
-header {
+
+header a {
+  display: block;
   position: absolute;
+  width: fit-content;
+  height: fit-content;
   z-index: +1;
+  padding: 3vw 9.5vw;
 }
 
 header img {
-  display: block;
-  position: absolute;
-  width: 14.95vw;
-  margin: 3vw 9.5vw;
+  width: 15em;
 }
 
 footer img {
